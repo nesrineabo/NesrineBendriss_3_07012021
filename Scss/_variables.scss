@@ -203,7 +203,7 @@ ol {
 /* Media Queries */
 
 @mixin non-mobile {
-  @media screen and (min-width: 600px) and (max-width: 1440px) {
+  @media screen and (min-width: 600px) and (max-width: 1800px) {
     .fonctionnement {
       & > h2 {
         margin-left: 50px;
@@ -249,11 +249,15 @@ ol {
     .icone-favoris--r {
       margin-right: 20px;
     }
+
+    .footer-menu{
+      margin-left: 30px;
+    }
   }
 }
 
 @mixin non-mobile-menu {
-  @media screen and (min-width: 1306px) and (max-width: 1440px) {
+  @media screen and (min-width: 1306px) and (max-width: 1800px) {
     .restaurant__titre {
       margin-left: 50px;
       margin-right: 50px;

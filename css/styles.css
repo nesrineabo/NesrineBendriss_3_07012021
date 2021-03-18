@@ -220,6 +220,7 @@ ol {
 .restaurants {
   background-color: #f6f6f6;
   padding-top: 60px;
+  padding-bottom: 44px;
 }
 
 .restaurants__contenu h2 {
@@ -327,7 +328,7 @@ ol {
           animation-fill-mode: forwards;
 }
 
-@media screen and (min-width: 600px) and (max-width: 1440px) {
+@media screen and (min-width: 600px) and (max-width: 1800px) {
   .fonctionnement > h2 {
     margin-left: 50px;
   }
@@ -372,9 +373,12 @@ ol {
   .icone-favoris--r {
     margin-right: 20px;
   }
+  .footer-menu {
+    margin-left: 30px;
+  }
 }
 
-@media screen and (min-width: 1306px) and (max-width: 1440px) {
+@media screen and (min-width: 1306px) and (max-width: 1800px) {
   .restaurant__titre {
     margin-left: 50px;
     margin-right: 50px;
@@ -471,8 +475,8 @@ ol {
   background: linear-gradient(176deg, #ff79da 0%, #9356dc 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  -webkit-transition: opacity 3s linear forwards;
-  transition: opacity 3s linear forwards;
+  -webkit-transition: opacity 2s linear forwards;
+  transition: opacity 2s linear forwards;
   opacity: 0;
 }
 
@@ -828,8 +832,8 @@ ol {
   background: linear-gradient(176deg, #ff79da 0%, #9356dc 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  -webkit-transition: opacity 3s linear forwards;
-  transition: opacity 3s linear forwards;
+  -webkit-transition: opacity 2s linear forwards;
+  transition: opacity 2s linear forwards;
   opacity: 0;
 }
 
@@ -1093,9 +1097,6 @@ header .fa-arrow-left {
   margin: 0;
   padding-top: 15px;
   font-weight: 500;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
 }
 
 .carte p {
@@ -1104,9 +1105,6 @@ header .fa-arrow-left {
   padding-bottom: 16px;
   font-weight: 300;
   font-size: 15px;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
 }
 
 .carte:hover .carte__confirmation {
@@ -1174,12 +1172,6 @@ header .fa-arrow-left {
           flex: 1;
   position: relative;
   width: 100%;
-}
-
-.carte .carte-entree-1__details--titre {
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
 }
 
 .prix {
@@ -1301,16 +1293,10 @@ header .fa-arrow-left {
   }
 }
 
-.carte-entree-1__details--paragraphe {
+.carte_contenu:hover {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
-}
-
-.carte__contenu p {
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-  width: 200px;
+  width: 245px;
 }
 /*# sourceMappingURL=styles.css.map */
