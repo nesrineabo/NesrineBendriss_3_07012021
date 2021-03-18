@@ -1,0 +1,206 @@
+@import "./variables";
+@import "./animations";
+@import "./footer";
+
+header {
+  @include header-restaurants;
+}
+
+.fa-arrow-left {
+  @include fleche-gauche;
+}
+
+.image-fond {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  position: relative;
+  z-index: 0;
+}
+
+.restaurant {
+  &__menu {
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    top: -40px;
+    bottom: 60px;
+    background-color: $bg-gris-clair;
+    //padding-top: 25px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    height: auto;
+    padding: 0;
+    margin: 0;
+  }
+  &__titre {
+    margin-top: 0;
+    margin-left: 20px;
+    margin-right: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    h1 {
+      font-family: $titre-logo;
+      font-size: 1.7em;
+      margin-top: 35px;
+      margin-bottom: 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  &__entrees--titre {
+    @include margin-carte;
+    @include titre-section;
+  }
+
+  &__plat--titre {
+    @include margin-carte;
+    @include titre-section;
+  }
+
+  &__dessert--titre {
+    @include margin-carte;
+    @include titre-section;
+  }
+}
+
+.titre-decoration {
+  border-bottom: 3px solid $couleur-tertiaire;
+  //display: block;
+  padding-top: 8px;
+  width: 40px;
+}
+
+.carte {
+  @include carte-contour;
+  position: relative;
+  display: flex;
+  height: 68px;
+  cursor: pointer;
+  padding-right: 0;
+
+  h4 {
+    margin: 0;
+    padding-top: 15px;
+    font-weight: 500;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  p {
+    margin: 0;
+    padding-top: 6px;
+    padding-bottom: 16px;
+    font-weight: 300;
+    font-size: 15px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  &:hover &__confirmation {
+    background-color: $couleur-tertiaire;
+    transform: scale(1);
+    transform-origin: 50% 0%;
+    transition: 800ms;
+    width: 60px;
+    margin-right: 0;
+
+    .fa-check-circle {
+      transform: rotate(-360deg);
+      opacity: 1;
+      font-size: 20px;
+      transition: 400ms;
+    }
+  }
+
+  &__confirmation {
+    background-color: $couleur-tertiaire;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    text-align: center;
+    padding-top: 24px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 0px;
+    transition: 500ms;
+    position: relative;
+    color: white;
+
+    .fa-check-circle {
+      opacity: 0;
+      font-size: 1rem;
+      transition: 700ms;
+      position: absolute;
+      bottom: 25px;
+    }
+
+    &:hover .carte__contenu {
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+  }
+
+  &__contenu {
+    flex: 1;
+    position: relative;
+    width: 100%;
+  }
+
+  .carte-entree-1__details--titre {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+}
+
+.prix {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: absolute;
+  font-weight: 500;
+  right: 10px;
+  bottom: 10px;
+}
+
+.bouton-commander {
+  margin-top: 45px;
+  margin-bottom: 60px;
+  display: flex;
+  justify-content: center;
+}
+
+.commander {
+  font-size: 1em;
+  width: 186px;
+  height: 50px;
+  @include bouton;
+  border: none;
+  cursor: pointer;
+}
+
+@include carte-animation;
+
+.carte-entree-1__details--paragraphe {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.carte__contenu {
+  p {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 200px;
+  }
+}

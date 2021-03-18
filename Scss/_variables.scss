@@ -1,0 +1,277 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+
+/* Font + Couleurs */
+
+$couleur-primaire: #9356dc;
+$couleur-secondaire: #ff79da;
+$couleur-tertiaire: #99e2d0;
+
+$footer-bg: #353535;
+
+$bg-gris-clair: #f6f6f6;
+
+$pastille: #008766;
+
+$titre-logo: "Shrikhand", cursive;
+$paragraphe: "Roboto", sans-serif;
+
+/* Css Reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Variables Générales */
+
+body {
+  margin: 0;
+  font-family: $paragraphe;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+.fa-heart {
+  font-size: 23px;
+}
+
+@mixin shadow {
+  box-shadow: 0px 8px 20px 3px rgba(0, 0, 0, 0.1);
+}
+
+@mixin shadow-hover {
+  box-shadow: 0px 8px 20px 3px rgba(0, 0, 0, 0.25);
+}
+
+@mixin gradient {
+  background: rgb(255, 121, 218);
+  background: linear-gradient(
+    176deg,
+    rgba(255, 121, 218, 1) 0%,
+    rgba(147, 86, 220, 1) 100%
+  );
+}
+
+@mixin flexcenter($direction, $wrap) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: $direction $wrap;
+}
+
+@mixin flexcenter-direction($direction) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: $direction;
+}
+
+/* Variables Coeur */
+
+@mixin coeur {
+  .coeur {
+    font-size: 23px;
+    display: inline-block;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 2px #393939;
+    //background-size: 200px 200px;
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-position: 100%;
+  }
+
+  .coeur:hover {
+    -webkit-text-stroke: transparent;
+    transform: scale (1.1);
+    animation-name: remplissage;
+    animation-duration: 3000ms;
+    animation-fill-mode: forwards;
+  }
+}
+
+/* Variables Section Fonctionnement */
+
+@mixin fonctionnement-liste {
+  list-style-type: none;
+  padding: 30px 0 30px 32px;
+  background-color: white;
+  margin-bottom: 24px;
+  border-radius: 20px;
+  margin-left: 14px;
+}
+
+@mixin icone {
+  color: #7e7e7e;
+  padding-right: 25px;
+  font-size: 1em;
+}
+
+/* Variables Section Restaurants (Accueil) */
+
+/* Variables _Restaurants */
+
+@mixin header-restaurants {
+  .header-accueil {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    padding-bottom: 17px;
+    border-bottom: 2px solid #cfcfcf;
+  }
+  .fa-arrow-left {
+    align-items: center;
+    justify-content: flex-start;
+  }
+}
+
+@mixin fleche-gauche {
+  position: absolute;
+  font-size: 20px;
+  top: 30px;
+  left: 11px;
+  margin-left: 20px;
+  margin-right: 63px;
+}
+
+@mixin margin-carte {
+  margin-top: 45px;
+  margin-left: 20px;
+}
+
+@mixin titre-section {
+  h4 {
+    font-weight: 300;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+@mixin carte-contour {
+  background-color: white;
+  border-radius: 15px;
+  @include shadow;
+  padding-left: 10px;
+  padding-right: 23px;
+  margin-top: 15px;
+  margin-left: 14px;
+  margin-right: 14px;
+}
+
+/* Variables Footer */
+
+@mixin padding-footer {
+  padding-left: 24px;
+  padding-top: 25px;
+  padding-bottom: 36px;
+}
+
+@mixin bouton {
+  color: white;
+  font-weight: 500;
+  padding: 1.02em 1.5em;
+  border-radius: 80px;
+  @include gradient;
+  @include shadow;
+}
+
+@mixin bouton-hover {
+  color: white;
+  font-weight: 500;
+  padding: 1.02em 1.5em;
+  border-radius: 80px;
+  @include shadow-hover;
+}
+
+/* Media Queries */
+
+@mixin non-mobile {
+  @media screen and (min-width: 600px) and (max-width: 1440px) {
+    .fonctionnement {
+      & > h2 {
+        margin-left: 50px;
+      }
+
+      &__liste {
+        margin-left: 50px;
+        margin-right: 50px;
+        max-width: 100%;
+
+        &::before {
+          margin-left: 50px;
+        }
+      }
+    }
+
+    .restaurants {
+      &__cartes {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-bottom: 50px;
+      }
+
+      &__contenu {
+        width: 100%;
+
+        & > h2 {
+          margin-left: 50px;
+        }
+      }
+
+      .carte-restaurants {
+        width: 48%;
+        height: 252px;
+      }
+    }
+
+    .icone-favoris--r {
+      margin-right: 20px;
+    }
+  }
+}
+
+@mixin non-mobile-menu {
+  @media screen and (min-width: 1306px) and (max-width: 1440px) {
+    .restaurant__titre {
+      margin-left: 50px;
+      margin-right: 50px;
+    }
+
+    .restaurant-contenu {
+      margin-left: 30px;
+      margin-right: 50px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      .carte {
+        width: 375px;
+      }
+    }
+
+    .icone-favoris--r {
+      margin-right: 50px;
+    }
+  }
+}
