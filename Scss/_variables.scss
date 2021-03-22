@@ -195,15 +195,19 @@ ol {
   font-weight: 500;
   padding: 1.02em 1.5em;
   border-radius: 80px;
-  background: rgb(255,144,224);
-  background: linear-gradient(176deg, rgba(255,144,224,1) 0%, rgba(166,96,250,1) 100%);
   @include shadow-hover;
+  background: rgb(255, 144, 224);
+  background: linear-gradient(
+    176deg,
+    rgba(255, 144, 224, 1) 0%,
+    rgba(166, 96, 250, 1) 100%
+  );
 }
 
 /* Media Queries */
 
 @mixin non-mobile {
-  @media screen and (min-width: 600px) and (max-width: 1800px) {
+  @media screen and (min-width: 600px) and (max-width: 1440px) {
     .fonctionnement {
       & > h2 {
         margin-left: 50px;
@@ -249,15 +253,11 @@ ol {
     .icone-favoris--r {
       margin-right: 20px;
     }
-
-    .footer-menu{
-      margin-left: 30px;
-    }
   }
 }
 
 @mixin non-mobile-menu {
-  @media screen and (min-width: 1306px) and (max-width: 1800px) {
+  @media screen and (min-width: 1306px) and (max-width: 1440px) {
     .restaurant__titre {
       margin-left: 50px;
       margin-right: 50px;

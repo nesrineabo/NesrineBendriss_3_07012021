@@ -1,3 +1,6 @@
+@import "./variables";
+@import "./animations";
+
 /* Mise en page approche : Mobile-First */
 
 /* Disposition Logo SVG Header */
@@ -192,7 +195,7 @@
     margin-right: 22px;
   }
 
-  @include coeur;
+  @include coeur-accueil;
 }
 
 @include non-mobile;
