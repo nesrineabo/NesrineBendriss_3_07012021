@@ -62,7 +62,7 @@
     @include gradient;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    transition: opacity 2s linear forwards;
+    transition: opacity 800ms;
     opacity: 0;
 
     &:hover {

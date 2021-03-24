@@ -175,12 +175,6 @@ ol {
 
 /* Variables Footer */
 
-@mixin padding-footer {
-  padding-left: 24px;
-  padding-top: 25px;
-  padding-bottom: 36px;
-}
-
 @mixin bouton {
   color: white;
   font-weight: 500;
@@ -253,19 +247,18 @@ ol {
     .icone-favoris--r {
       margin-right: 20px;
     }
+
+    .restaurant__titre {
+      margin-left: 50px;
+    }
   }
 }
 
 @mixin non-mobile-menu {
   @media screen and (min-width: 1306px) and (max-width: 1440px) {
-    .restaurant__titre {
-      margin-left: 50px;
-      margin-right: 50px;
-    }
-
     .restaurant-contenu {
       margin-left: 30px;
-      margin-right: 50px;
+      margin-right: 30px;
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
@@ -278,6 +271,17 @@ ol {
 
     .icone-favoris--r {
       margin-right: 50px;
+    }
+
+    .restaurant__titre {
+      h1 {
+        margin-left: 30px;
+        margin-right: 50px;
+      }
+    }
+
+    .footer-menu {
+      margin-left: 50px;
     }
   }
 }
@@ -295,7 +299,7 @@ ol {
 
     .restaurant-contenu {
       margin-left: 30px;
-      margin-right: 50px;
+      margin-right: 30px;
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
@@ -304,6 +308,15 @@ ol {
       .carte {
         width: 420px;
       }
+    }
+
+    .footer-menu {
+      margin-left: 50px;
+    }
+
+    .restaurant__titre {
+      margin-left: 50px;
+      margin-right: 50px;
     }
   }
 }

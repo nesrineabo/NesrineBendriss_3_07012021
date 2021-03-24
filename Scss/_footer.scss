@@ -5,7 +5,9 @@ footer {
 }
 
 .footer-menu {
-  @include padding-footer;
+  margin-left: 24px;
+  padding-top: 25px;
+  padding-bottom: 36px;
   color: white;
   display: flex;
   flex-direction: column;
