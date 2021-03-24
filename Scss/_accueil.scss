@@ -196,6 +196,7 @@
   }
 
   @include coeur-accueil;
+  @include animation-coeur;
 }
 
 @include non-mobile;

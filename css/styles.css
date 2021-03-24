@@ -53,6 +53,22 @@ ol {
 }
 
 /* Variables Coeur */
+/* @mixin coeur {
+  .coeur {
+    font-size: 23px;
+    display: inline-block;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 2px #393939;
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-position: 100%;
+  }
+
+  .coeur:hover {
+    -webkit-text-stroke: transparent;
+    transform: scale (1.1);
+  }
+} */
 /* Variables Section Fonctionnement */
 /* Variables Section Restaurants (Accueil) */
 /* Variables _Restaurants */
@@ -94,6 +110,22 @@ ol {
 }
 
 /* Variables Coeur */
+/* @mixin coeur {
+  .coeur {
+    font-size: 23px;
+    display: inline-block;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 2px #393939;
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-position: 100%;
+  }
+
+  .coeur:hover {
+    -webkit-text-stroke: transparent;
+    transform: scale (1.1);
+  }
+} */
 /* Variables Section Fonctionnement */
 /* Variables Section Restaurants (Accueil) */
 /* Variables _Restaurants */
@@ -135,6 +167,22 @@ ol {
 }
 
 /* Variables Coeur */
+/* @mixin coeur {
+  .coeur {
+    font-size: 23px;
+    display: inline-block;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 2px #393939;
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-position: 100%;
+  }
+
+  .coeur:hover {
+    -webkit-text-stroke: transparent;
+    transform: scale (1.1);
+  }
+} */
 /* Variables Section Fonctionnement */
 /* Variables Section Restaurants (Accueil) */
 /* Variables _Restaurants */
@@ -399,13 +447,7 @@ ol {
   background: linear-gradient(176deg, #ff79da 0%, #9356dc 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  -webkit-transition: opacity 800ms;
-  transition: opacity 800ms;
   opacity: 0;
-}
-
-.restaurants .coeur__bg:hover {
-  opacity: 1;
 }
 
 .restaurants .icone-favoris:hover .coeur__sansbg {
@@ -427,6 +469,52 @@ ol {
 .restaurants .coeur__sansbg {
   position: absolute;
   text-align: center;
+}
+
+.restaurants .coeur__bg:hover {
+  -webkit-animation: anim-coeur1 800ms forwards;
+          animation: anim-coeur1 800ms forwards;
+}
+
+@-webkit-keyframes anim-coeur1 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes anim-coeur1 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.restaurants .coeur__sansbg:hover {
+  -webkit-animation: anim-coeur2 800ms forwards;
+          animation: anim-coeur2 800ms forwards;
+}
+
+@-webkit-keyframes anim-coeur2 {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes anim-coeur2 {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
 }
 
 @media screen and (min-width: 600px) {
@@ -547,6 +635,22 @@ ol {
 }
 
 /* Variables Coeur */
+/* @mixin coeur {
+  .coeur {
+    font-size: 23px;
+    display: inline-block;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 2px #393939;
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-position: 100%;
+  }
+
+  .coeur:hover {
+    -webkit-text-stroke: transparent;
+    transform: scale (1.1);
+  }
+} */
 /* Variables Section Fonctionnement */
 /* Variables Section Restaurants (Accueil) */
 /* Variables _Restaurants */
@@ -590,6 +694,22 @@ ol {
 }
 
 /* Variables Coeur */
+/* @mixin coeur {
+  .coeur {
+    font-size: 23px;
+    display: inline-block;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 2px #393939;
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-position: 100%;
+  }
+
+  .coeur:hover {
+    -webkit-text-stroke: transparent;
+    transform: scale (1.1);
+  }
+} */
 /* Variables Section Fonctionnement */
 /* Variables Section Restaurants (Accueil) */
 /* Variables _Restaurants */
@@ -726,6 +846,22 @@ ol {
 }
 
 /* Variables Coeur */
+/* @mixin coeur {
+  .coeur {
+    font-size: 23px;
+    display: inline-block;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 2px #393939;
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-position: 100%;
+  }
+
+  .coeur:hover {
+    -webkit-text-stroke: transparent;
+    transform: scale (1.1);
+  }
+} */
 /* Variables Section Fonctionnement */
 /* Variables Section Restaurants (Accueil) */
 /* Variables _Restaurants */
@@ -816,6 +952,22 @@ ol {
 }
 
 /* Variables Coeur */
+/* @mixin coeur {
+  .coeur {
+    font-size: 23px;
+    display: inline-block;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 2px #393939;
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-position: 100%;
+  }
+
+  .coeur:hover {
+    -webkit-text-stroke: transparent;
+    transform: scale (1.1);
+  }
+} */
 /* Variables Section Fonctionnement */
 /* Variables Section Restaurants (Accueil) */
 /* Variables _Restaurants */
@@ -857,6 +1009,22 @@ ol {
 }
 
 /* Variables Coeur */
+/* @mixin coeur {
+  .coeur {
+    font-size: 23px;
+    display: inline-block;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 2px #393939;
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-position: 100%;
+  }
+
+  .coeur:hover {
+    -webkit-text-stroke: transparent;
+    transform: scale (1.1);
+  }
+} */
 /* Variables Section Fonctionnement */
 /* Variables Section Restaurants (Accueil) */
 /* Variables _Restaurants */
@@ -900,6 +1068,22 @@ ol {
 }
 
 /* Variables Coeur */
+/* @mixin coeur {
+  .coeur {
+    font-size: 23px;
+    display: inline-block;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 2px #393939;
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-position: 100%;
+  }
+
+  .coeur:hover {
+    -webkit-text-stroke: transparent;
+    transform: scale (1.1);
+  }
+} */
 /* Variables Section Fonctionnement */
 /* Variables Section Restaurants (Accueil) */
 /* Variables _Restaurants */
@@ -1026,13 +1210,7 @@ header .fa-arrow-left {
   background: linear-gradient(176deg, #ff79da 0%, #9356dc 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  -webkit-transition: opacity 800ms;
-  transition: opacity 800ms;
   opacity: 0;
-}
-
-.restaurant__titre .coeur__bg:hover {
-  opacity: 1;
 }
 
 .restaurant__titre .icone-favoris:hover .coeur__sansbg {
@@ -1054,6 +1232,34 @@ header .fa-arrow-left {
 .restaurant__titre .coeur__sansbg {
   position: absolute;
   text-align: center;
+}
+
+.restaurant__titre .coeur__bg:hover {
+  -webkit-animation: anim-coeur1 800ms forwards;
+          animation: anim-coeur1 800ms forwards;
+}
+
+@keyframes anim-coeur1 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.restaurant__titre .coeur__sansbg:hover {
+  -webkit-animation: anim-coeur2 800ms forwards;
+          animation: anim-coeur2 800ms forwards;
+}
+
+@keyframes anim-coeur2 {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
 }
 
 .restaurant__titre .icone-favoris {
