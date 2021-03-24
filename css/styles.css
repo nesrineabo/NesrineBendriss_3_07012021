@@ -429,7 +429,7 @@ ol {
   text-align: center;
 }
 
-@media screen and (min-width: 600px) and (max-width: 1305px) {
+@media screen and (min-width: 600px) {
   .fonctionnement > h2 {
     margin-left: 50px;
   }
@@ -1339,33 +1339,7 @@ header .fa-arrow-left {
 }
 
 @media screen and (min-width: 1441px) {
-  .restaurants__cartes {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin-left: 50px;
-    margin-right: 50px;
-    margin-bottom: 50px;
-  }
-  .restaurants__contenu {
-    width: 100%;
-  }
-  .restaurants__contenu > h2 {
-    margin-left: 50px;
-  }
-  .restaurants .carte-restaurants {
+  .carte-restaurants {
     width: 48%;
     height: 252px;
   }

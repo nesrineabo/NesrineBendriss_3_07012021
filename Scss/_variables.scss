@@ -207,7 +207,7 @@ ol {
 /* Media Queries */
 
 @mixin non-mobile {
-  @media screen and (min-width: 600px) and (max-width: 1305px) {
+  @media screen and (min-width: 600px) {
     .fonctionnement {
       & > h2 {
         margin-left: 50px;
@@ -284,30 +284,9 @@ ol {
 
 @mixin grand-ecran {
   @media screen and (min-width: 1441px) {
-    .restaurants {
-      &__cartes {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        margin-left: 50px;
-        margin-right: 50px;
-        margin-bottom: 50px;
-      }
-
-      &__contenu {
-        width: 100%;
-
-        & > h2 {
-          margin-left: 50px;
-        }
-      }
-
-      .carte-restaurants {
-        width: 48%;
-        height: 252px;
-      }
+    .carte-restaurants {
+      width: 48%;
+      height: 252px;
     }
 
     .icone-favoris--r {
