@@ -207,7 +207,7 @@ ol {
 /* Media Queries */
 
 @mixin non-mobile {
-  @media screen and (min-width: 600px) and (max-width: 1440px) {
+  @media screen and (min-width: 600px) {
     .fonctionnement {
       & > h2 {
         margin-left: 50px;
@@ -257,7 +257,7 @@ ol {
 }
 
 @mixin non-mobile-menu {
-  @media screen and (min-width: 1306px) and (max-width: 1440px) {
+  @media screen and (min-width: 1306px) {
     .restaurant__titre {
       margin-left: 50px;
       margin-right: 50px;
