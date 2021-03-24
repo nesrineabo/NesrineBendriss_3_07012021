@@ -429,7 +429,7 @@ ol {
   text-align: center;
 }
 
-@media screen and (min-width: 600px) and (max-width: 1440px) {
+@media screen and (min-width: 600px) and (max-width: 1305px) {
   .fonctionnement > h2 {
     margin-left: 50px;
   }
@@ -1335,6 +1335,61 @@ header .fa-arrow-left {
     -webkit-transform: translateY(0px);
             transform: translateY(0px);
     opacity: 1;
+  }
+}
+
+@media screen and (min-width: 1441px) {
+  .restaurants__cartes {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+  }
+  .restaurants__contenu {
+    width: 100%;
+  }
+  .restaurants__contenu > h2 {
+    margin-left: 50px;
+  }
+  .restaurants .carte-restaurants {
+    width: 48%;
+    height: 252px;
+  }
+  .icone-favoris--r {
+    margin-right: 20px;
+  }
+  .restaurant-contenu {
+    margin-left: 30px;
+    margin-right: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .restaurant-contenu .carte {
+    width: 420px;
   }
 }
 /*# sourceMappingURL=styles.css.map */
