@@ -23,10 +23,10 @@ header {
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
     top: -40px;
-    bottom: -60px;
+    //bottom: -60px;
     background-color: $bg-gris-clair;
     position: relative;
-    //overflow: hidden;
+    overflow: auto;
     z-index: 1;
     height: auto;
     padding: 0;
@@ -184,7 +184,12 @@ header {
   @include bouton;
   border: none;
   cursor: pointer;
+
+  &:hover {
+    @include bouton-hover;
+  }
 }
 
 @include carte-animation;
 @include grand-ecran;
+@include non-mobile-menu;
