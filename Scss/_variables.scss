@@ -16,6 +16,8 @@ $pastille: #008766;
 $titre-logo: "Shrikhand", cursive;
 $paragraphe: "Roboto", sans-serif;
 
+$padding-simple: 1em;
+
 /* Css Reset */
 
 * {
@@ -82,6 +84,14 @@ ol {
   flex-direction: $direction;
 }
 
+/* Variables Header */
+
+@mixin logo {
+  font-family: $titre-logo;
+  font-size: 30px;
+  text-align: center;
+}
+
 /* Variables Section Fonctionnement */
 
 @mixin fonctionnement-liste {
@@ -104,13 +114,6 @@ ol {
 /* Variables _Restaurants */
 
 @mixin header-restaurants {
-  .header-accueil {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-    padding-bottom: 17px;
-    border-bottom: 2px solid #cfcfcf;
-  }
   .fa-arrow-left {
     align-items: center;
     justify-content: flex-start;

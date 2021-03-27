@@ -3,7 +3,12 @@
 @import "./footer";
 
 header {
+  padding: $padding-simple;
   @include header-restaurants;
+
+  .header__logo {
+    @include logo;
+  }
 }
 
 .fa-arrow-left {

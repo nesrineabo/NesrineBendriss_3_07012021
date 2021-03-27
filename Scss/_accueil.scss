@@ -5,14 +5,17 @@
 
 /* Disposition Logo SVG Header */
 
-.header-logo {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 25px;
-  margin-bottom: 12px;
-  height: 31px;
-  width: 160px;
+.header {
+  &__accueil {
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25);
+    padding: 1em;
+    z-index: 100;
+    position: relative;
+  }
+
+  &__logo {
+    @include logo;
+  }
 }
 
 /* Localisation Choix de la ville par le Client */
@@ -23,7 +26,6 @@
   align-items: center;
   justify-content: center;
   padding: 20px 0;
-  border-top: 1px solid #cfcfcf;
 
   & > .fa-map-marker-alt {
     padding-right: 17px;

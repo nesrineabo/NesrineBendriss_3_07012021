@@ -52,6 +52,7 @@ ol {
   font-size: 23px;
 }
 
+/* Variables Header */
 /* Variables Section Fonctionnement */
 /* Variables Section Restaurants (Accueil) */
 /* Variables _Restaurants */
@@ -92,6 +93,7 @@ ol {
   font-size: 23px;
 }
 
+/* Variables Header */
 /* Variables Section Fonctionnement */
 /* Variables Section Restaurants (Accueil) */
 /* Variables _Restaurants */
@@ -132,6 +134,7 @@ ol {
   font-size: 23px;
 }
 
+/* Variables Header */
 /* Variables Section Fonctionnement */
 /* Variables Section Restaurants (Accueil) */
 /* Variables _Restaurants */
@@ -141,14 +144,18 @@ ol {
 /* Animation Coeur */
 /* Mise en page approche : Mobile-First */
 /* Disposition Logo SVG Header */
-.header-logo {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 25px;
-  margin-bottom: 12px;
-  height: 31px;
-  width: 160px;
+.header__accueil {
+  -webkit-box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25);
+  padding: 1em;
+  z-index: 100;
+  position: relative;
+}
+
+.header__logo {
+  font-family: "Shrikhand", cursive;
+  font-size: 30px;
+  text-align: center;
 }
 
 /* Localisation Choix de la ville par le Client */
@@ -164,7 +171,6 @@ ol {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 20px 0;
-  border-top: 1px solid #cfcfcf;
 }
 
 .localisation > .fa-map-marker-alt {
@@ -583,6 +589,7 @@ ol {
   font-size: 23px;
 }
 
+/* Variables Header */
 /* Variables Section Fonctionnement */
 /* Variables Section Restaurants (Accueil) */
 /* Variables _Restaurants */
@@ -625,6 +632,7 @@ ol {
   font-size: 23px;
 }
 
+/* Variables Header */
 /* Variables Section Fonctionnement */
 /* Variables Section Restaurants (Accueil) */
 /* Variables _Restaurants */
@@ -760,6 +768,7 @@ ol {
   font-size: 23px;
 }
 
+/* Variables Header */
 /* Variables Section Fonctionnement */
 /* Variables Section Restaurants (Accueil) */
 /* Variables _Restaurants */
@@ -849,6 +858,7 @@ ol {
   font-size: 23px;
 }
 
+/* Variables Header */
 /* Variables Section Fonctionnement */
 /* Variables Section Restaurants (Accueil) */
 /* Variables _Restaurants */
@@ -889,6 +899,7 @@ ol {
   font-size: 23px;
 }
 
+/* Variables Header */
 /* Variables Section Fonctionnement */
 /* Variables Section Restaurants (Accueil) */
 /* Variables _Restaurants */
@@ -931,6 +942,7 @@ ol {
   font-size: 23px;
 }
 
+/* Variables Header */
 /* Variables Section Fonctionnement */
 /* Variables Section Restaurants (Accueil) */
 /* Variables _Restaurants */
@@ -985,16 +997,8 @@ footer {
   padding-right: 6px;
 }
 
-header .header-accueil {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-top: 20px;
-  padding-bottom: 17px;
-  border-bottom: 2px solid #cfcfcf;
+header {
+  padding: 1em;
 }
 
 header .fa-arrow-left {
@@ -1004,6 +1008,12 @@ header .fa-arrow-left {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+}
+
+header .header__logo {
+  font-family: "Shrikhand", cursive;
+  font-size: 30px;
+  text-align: center;
 }
 
 .fa-arrow-left {
