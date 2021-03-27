@@ -1027,14 +1027,13 @@ header .fa-arrow-left {
 .restaurant__menu {
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
-  top: -40px;
   background-color: #f6f6f6;
   position: relative;
   overflow: auto;
   z-index: 1;
   height: auto;
   padding: 0;
-  margin: 0;
+  margin-top: -4em;
 }
 
 .restaurant__titre {
