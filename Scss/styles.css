@@ -646,7 +646,7 @@ ol {
   height: 100%;
   opacity: 0.9;
   visibility: hidden;
-  -moz-animation: visibility 3s;
+  -moz-transition: visibility 3s;
   -webkit-transition: visibility 3s;
   transition: visibility 3s;
 }
