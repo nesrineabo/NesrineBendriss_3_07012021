@@ -646,20 +646,18 @@ ol {
   height: 100%;
   opacity: 0.9;
   visibility: hidden;
-  -moz-transition: visibility 3s;
   -webkit-transition: visibility 3s;
   transition: visibility 3s;
 }
 
-.chargement::after {
+/* .chargement::after {
   content: "";
   visibility: hidden;
-}
-
+} 
+*/
 .loader1 {
   height: 20px;
   width: 20px;
-  -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background-color: #9356dc;
@@ -670,23 +668,8 @@ ol {
   right: 0;
   left: -20px;
   border-radius: 50%;
-  -moz-animation: move1 1.5s infinite;;
-  -webkit-animation: move1 1.5s infinite;
-          animation: move1 1.5s infinite;
-}
-
-@-moz-keyframes move1{
-  50% {
-    left: 20px;
-    z-index: 0;
-  }
-  51% {
-    z-index: 2;
-  }
-  100% {
-    left: -20px;
-    z-index: 2;
-  }
+  -webkit-animation: move1 2000ms forwards;
+          animation: move1 2000ms forwards;
 }
 
 @-webkit-keyframes move1 {
@@ -728,18 +711,8 @@ ol {
   left: 20px;
   right: 0;
   border-radius: 50%;
-  -moz-animation: move2 1.5s infinite;;
-  -webkit-animation: move2 1.5s infinite;
-          animation: move2 1.5s infinite;
-}
-
-@-moz-keyframes move2{
-  50% {
-    left: -20px;
-  }
-  100% {
-    left: 20px;
-  }
+  -webkit-animation: move2 2000ms forwards;
+          animation: move2 2000ms forwards;
 }
 
 @-webkit-keyframes move2 {

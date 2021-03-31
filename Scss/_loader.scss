@@ -11,10 +11,11 @@
   transition: visibility 3s;
 }
 
-.chargement::after {
+/* .chargement::after {
   content: "";
   visibility: hidden;
-}
+} 
+*/
 
 .loader1 {
   height: 20px;
@@ -28,7 +29,22 @@
   right: 0;
   left: -20px;
   border-radius: 50%;
-  animation: move1 1.5s infinite;
+  -moz-animation: move1 2000ms forwards;
+  animation: move1 2000ms forwards;
+}
+
+@-moz-keyframes move1 {
+  50% {
+    left: 20px;
+    z-index: 0;
+  }
+  51% {
+    z-index: 2;
+  }
+  100% {
+    left: -20px;
+    z-index: 2;
+  }
 }
 
 @keyframes move1 {
@@ -55,8 +71,19 @@
   left: 20px;
   right: 0;
   border-radius: 50%;
-  animation: move2 1.5s infinite;
+  -moz-animation: move2 2000ms forwards;
+  animation: move2 2000ms forwards;
 }
+
+@-moz-keyframes move2 {
+  50% {
+    left: -20px;
+  }
+  100% {
+    left: 20px;
+  }
+}
+
 @keyframes move2 {
   50% {
     left: -20px;
