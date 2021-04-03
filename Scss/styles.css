@@ -517,6 +517,9 @@ ol {
   .icone-favoris--r {
     margin-right: 20px;
   }
+  .footer-menu {
+    margin-left: 50px;
+  }
   .restaurant__titre {
     margin-left: 50px;
   }
@@ -648,6 +651,22 @@ ol {
   visibility: hidden;
   -webkit-transition: visibility 3s;
   transition: visibility 3s;
+  -webkit-animation: chargement 300ms forwards;
+          animation: chargement 300ms forwards;
+}
+
+@-webkit-keyframes chargement {
+  100% {
+    opacity: 0;
+    z-index: -5;
+  }
+}
+
+@keyframes chargement {
+  100% {
+    opacity: 0;
+    z-index: -5;
+  }
 }
 
 /* .chargement::after {
@@ -656,6 +675,7 @@ ol {
 } 
 */
 .loader1 {
+  display: initial;
   height: 20px;
   width: 20px;
   -webkit-box-sizing: border-box;
@@ -668,8 +688,8 @@ ol {
   right: 0;
   left: -20px;
   border-radius: 50%;
-  -webkit-animation: move1 2000ms forwards;
-          animation: move1 2000ms forwards;
+  -webkit-animation: move1 2000ms infinite;
+          animation: move1 2000ms infinite;
 }
 
 @-webkit-keyframes move1 {
@@ -711,8 +731,8 @@ ol {
   left: 20px;
   right: 0;
   border-radius: 50%;
-  -webkit-animation: move2 2000ms forwards;
-          animation: move2 2000ms forwards;
+  -webkit-animation: move2 2000ms infinite;
+          animation: move2 2000ms infinite;
 }
 
 @-webkit-keyframes move2 {
