@@ -99,6 +99,159 @@ ol {
 /* Variables _Restaurants */
 /* Variables Footer */
 /* Media Queries */
+.chargement {
+  margin: 0;
+  position: fixed;
+  z-index: 999999;
+  background: white;
+  width: 100%;
+  height: 100%;
+  opacity: 0.9;
+  visibility: hidden;
+  -webkit-transition: visibility 3s;
+  transition: visibility 3s;
+  -webkit-animation: chargement 300ms forwards;
+          animation: chargement 300ms forwards;
+}
+
+@-webkit-keyframes chargement {
+  100% {
+    opacity: 0;
+    z-index: -5;
+  }
+}
+
+@keyframes chargement {
+  100% {
+    opacity: 0;
+    z-index: -5;
+  }
+}
+
+/* .chargement::after {
+  content: "";
+  visibility: hidden;
+} 
+*/
+.loader1 {
+  height: 20px;
+  width: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #9356dc;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: -20px;
+  border-radius: 50%;
+  -webkit-animation: move1 2000ms infinite;
+          animation: move1 2000ms infinite;
+}
+
+@-webkit-keyframes move1 {
+  50% {
+    left: 20px;
+    z-index: 0;
+  }
+  51% {
+    z-index: 2;
+  }
+  100% {
+    left: -20px;
+    z-index: 2;
+  }
+}
+
+@keyframes move1 {
+  50% {
+    left: 20px;
+    z-index: 0;
+  }
+  51% {
+    z-index: 2;
+  }
+  100% {
+    left: -20px;
+    z-index: 2;
+  }
+}
+
+.loader2 {
+  height: 20px;
+  width: 20px;
+  background-color: #ff79da;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 20px;
+  right: 0;
+  border-radius: 50%;
+  -webkit-animation: move2 2000ms infinite;
+          animation: move2 2000ms infinite;
+}
+
+@-webkit-keyframes move2 {
+  50% {
+    left: -20px;
+  }
+  100% {
+    left: 20px;
+  }
+}
+
+@keyframes move2 {
+  50% {
+    left: -20px;
+  }
+  100% {
+    left: 20px;
+  }
+}
+
+/* Font + Couleurs */
+/* Css Reset */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* Variables Générales */
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+.fa-heart {
+  font-size: 23px;
+}
+
+/* Variables Header */
+/* Variables Section Fonctionnement */
+/* Variables Section Restaurants (Accueil) */
+/* Variables _Restaurants */
+/* Variables Footer */
+/* Media Queries */
 /* Font + Couleurs */
 /* Css Reset */
 * {
@@ -600,159 +753,6 @@ ol {
 /* Media Queries */
 /* Animation : Affichage des Cartes */
 /* Animation Coeur */
-/* Font + Couleurs */
-/* Css Reset */
-* {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-/* Variables Générales */
-body {
-  margin: 0;
-  font-family: "Roboto", sans-serif;
-}
-
-a {
-  text-decoration: none;
-  color: unset;
-}
-
-ul {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-
-ol {
-  margin: 0;
-  padding: 0;
-}
-
-.fa-heart {
-  font-size: 23px;
-}
-
-/* Variables Header */
-/* Variables Section Fonctionnement */
-/* Variables Section Restaurants (Accueil) */
-/* Variables _Restaurants */
-/* Variables Footer */
-/* Media Queries */
-.chargement {
-  margin: 0;
-  position: fixed;
-  z-index: 999999;
-  background: white;
-  width: 100%;
-  height: 100%;
-  opacity: 0.9;
-  visibility: hidden;
-  -webkit-transition: visibility 3s;
-  transition: visibility 3s;
-  -webkit-animation: chargement 300ms forwards;
-          animation: chargement 300ms forwards;
-}
-
-@-webkit-keyframes chargement {
-  100% {
-    opacity: 0;
-    z-index: -5;
-  }
-}
-
-@keyframes chargement {
-  100% {
-    opacity: 0;
-    z-index: -5;
-  }
-}
-
-/* .chargement::after {
-  content: "";
-  visibility: hidden;
-} 
-*/
-.loader1 {
-  height: 20px;
-  width: 20px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  background-color: #9356dc;
-  position: absolute;
-  margin: auto;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: -20px;
-  border-radius: 50%;
-  -webkit-animation: move1 2000ms infinite;
-          animation: move1 2000ms infinite;
-}
-
-@-webkit-keyframes move1 {
-  50% {
-    left: 20px;
-    z-index: 0;
-  }
-  51% {
-    z-index: 2;
-  }
-  100% {
-    left: -20px;
-    z-index: 2;
-  }
-}
-
-@keyframes move1 {
-  50% {
-    left: 20px;
-    z-index: 0;
-  }
-  51% {
-    z-index: 2;
-  }
-  100% {
-    left: -20px;
-    z-index: 2;
-  }
-}
-
-.loader2 {
-  height: 20px;
-  width: 20px;
-  background-color: #ff79da;
-  position: absolute;
-  margin: auto;
-  top: 0;
-  bottom: 0;
-  left: 20px;
-  right: 0;
-  border-radius: 50%;
-  -webkit-animation: move2 2000ms infinite;
-          animation: move2 2000ms infinite;
-}
-
-@-webkit-keyframes move2 {
-  50% {
-    left: -20px;
-  }
-  100% {
-    left: 20px;
-  }
-}
-
-@keyframes move2 {
-  50% {
-    left: -20px;
-  }
-  100% {
-    left: 20px;
-  }
-}
-
 /* Font + Couleurs */
 /* Css Reset */
 * {
