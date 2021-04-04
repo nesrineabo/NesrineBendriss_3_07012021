@@ -10,7 +10,15 @@
   opacity: 0.9;
   visibility: hidden;
   transition: visibility 3s;
+  -moz-animation: chargement 300ms forwards;
   animation: chargement 300ms forwards;
+}
+
+@-moz-keyframes chargement{
+  100%{
+    opacity: 0;
+    z-index: -5;
+  }
 }
 
 @keyframes chargement{
