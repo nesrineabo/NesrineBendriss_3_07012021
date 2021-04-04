@@ -99,6 +99,143 @@ ol {
 /* Variables _Restaurants */
 /* Variables Footer */
 /* Media Queries */
+@-webkit-keyframes opacity_loader {
+  100% {
+    opacity: 0;
+    z-index: -1;
+  }
+}
+@keyframes opacity_loader {
+  100% {
+    opacity: 0;
+    z-index: -1;
+  }
+}
+
+@-webkit-keyframes scale {
+  0% {
+    -webkit-transform: scale(0.2);
+            transform: scale(0.2);
+  }
+  50% {
+    opacity: 0.5;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes scale {
+  0% {
+    -webkit-transform: scale(0.2);
+            transform: scale(0.2);
+  }
+  50% {
+    opacity: 0.5;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+.chargement {
+  position: fixed;
+  z-index: 1000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  -webkit-animation: opacity_loader 0.01s;
+          animation: opacity_loader 0.01s;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.chargement .loader {
+  width: 22px;
+  height: 22px;
+  margin: 2px;
+  border-radius: 100%;
+  display: inline-block;
+  -webkit-animation: scale 1s infinite;
+          animation: scale 1s infinite;
+}
+
+.chargement .loader:nth-child(1) {
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
+  background: #9356dc;
+}
+
+.chargement .loader:nth-child(2) {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+  background: #ff79da;
+}
+
+.chargement .loader:nth-child(3) {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+  background: #99e2d0;
+}
+
+/* Font + Couleurs */
+/* Css Reset */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* Variables Générales */
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+.fa-heart {
+  font-size: 23px;
+}
+
+/* Variables Header */
+/* Variables Section Fonctionnement */
+/* Variables Section Restaurants (Accueil) */
+/* Variables _Restaurants */
+/* Variables Footer */
+/* Media Queries */
 /* Font + Couleurs */
 /* Css Reset */
 * {
@@ -183,7 +320,7 @@ ol {
   font-family: "Roboto", sans-serif;
   font-size: 1em;
   font-weight: 400;
-  width: 135px;
+  width: 155px;
 }
 
 /* Présentation du Concept de OhMyFood */
@@ -517,6 +654,9 @@ ol {
   .icone-favoris--r {
     margin-right: 20px;
   }
+  .footer-menu {
+    margin-left: 50px;
+  }
   .restaurant__titre {
     margin-left: 50px;
   }
@@ -597,142 +737,6 @@ ol {
 /* Media Queries */
 /* Animation : Affichage des Cartes */
 /* Animation Coeur */
-/* Font + Couleurs */
-/* Css Reset */
-* {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-/* Variables Générales */
-body {
-  margin: 0;
-  font-family: "Roboto", sans-serif;
-}
-
-a {
-  text-decoration: none;
-  color: unset;
-}
-
-ul {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-
-ol {
-  margin: 0;
-  padding: 0;
-}
-
-.fa-heart {
-  font-size: 23px;
-}
-
-/* Variables Header */
-/* Variables Section Fonctionnement */
-/* Variables Section Restaurants (Accueil) */
-/* Variables _Restaurants */
-/* Variables Footer */
-/* Media Queries */
-.chargement {
-  position: fixed;
-  z-index: 999999;
-  background: white;
-  width: 100%;
-  height: 100%;
-  opacity: 0.9;
-  visibility: hidden;
-  -webkit-transition: visibility 3s;
-  transition: visibility 3s;
-}
-
-.chargement::after {
-  content: "";
-  visibility: hidden;
-}
-
-.loader1 {
-  height: 20px;
-  width: 20px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  background-color: #9356dc;
-  position: absolute;
-  margin: auto;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: -20px;
-  border-radius: 50%;
-  -webkit-animation: move1 1.5s infinite;
-          animation: move1 1.5s infinite;
-}
-
-@-webkit-keyframes move1 {
-  50% {
-    left: 20px;
-    z-index: 0;
-  }
-  51% {
-    z-index: 2;
-  }
-  100% {
-    left: -20px;
-    z-index: 2;
-  }
-}
-
-@keyframes move1 {
-  50% {
-    left: 20px;
-    z-index: 0;
-  }
-  51% {
-    z-index: 2;
-  }
-  100% {
-    left: -20px;
-    z-index: 2;
-  }
-}
-
-.loader2 {
-  height: 20px;
-  width: 20px;
-  background-color: #ff79da;
-  position: absolute;
-  margin: auto;
-  top: 0;
-  bottom: 0;
-  left: 20px;
-  right: 0;
-  border-radius: 50%;
-  -webkit-animation: move2 1.5s infinite;
-          animation: move2 1.5s infinite;
-}
-
-@-webkit-keyframes move2 {
-  50% {
-    left: -20px;
-  }
-  100% {
-    left: 20px;
-  }
-}
-
-@keyframes move2 {
-  50% {
-    left: -20px;
-  }
-  100% {
-    left: 20px;
-  }
-}
-
 /* Font + Couleurs */
 /* Css Reset */
 * {
