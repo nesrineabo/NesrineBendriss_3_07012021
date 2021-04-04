@@ -566,6 +566,7 @@ ol {
 .restaurants .coeur__bg:hover {
   -webkit-animation: anim-coeur1 800ms forwards;
           animation: anim-coeur1 800ms forwards;
+  cursor: pointer;
 }
 
 @-webkit-keyframes anim-coeur1 {
@@ -589,6 +590,7 @@ ol {
 .restaurants .coeur__sansbg:hover {
   -webkit-animation: anim-coeur2 800ms forwards;
           animation: anim-coeur2 800ms forwards;
+  cursor: pointer;
 }
 
 @-webkit-keyframes anim-coeur2 {
@@ -685,7 +687,7 @@ ol {
   .icone-favoris--r {
     margin-right: 50px;
   }
-  .restaurant__titre h1 {
+  .restaurant__titre h2 {
     margin-left: 30px;
     margin-right: 50px;
   }
@@ -1097,6 +1099,7 @@ header .header__logo {
 .restaurant__titre .coeur__bg:hover {
   -webkit-animation: anim-coeur1 800ms forwards;
           animation: anim-coeur1 800ms forwards;
+  cursor: pointer;
 }
 
 @keyframes anim-coeur1 {
@@ -1111,6 +1114,7 @@ header .header__logo {
 .restaurant__titre .coeur__sansbg:hover {
   -webkit-animation: anim-coeur2 800ms forwards;
           animation: anim-coeur2 800ms forwards;
+  cursor: pointer;
 }
 
 @keyframes anim-coeur2 {
@@ -1124,9 +1128,10 @@ header .header__logo {
 
 .restaurant__titre .icone-favoris {
   padding-top: 16px;
+  padding-left: 5px;
 }
 
-.restaurant__titre h1 {
+.restaurant__titre h2 {
   font-family: "Shrikhand", cursive;
   font-size: 1.7em;
   margin-top: 35px;
@@ -1476,7 +1481,7 @@ header .header__logo {
   .icone-favoris--r {
     margin-right: 50px;
   }
-  .restaurant__titre h1 {
+  .restaurant__titre h2 {
     margin-left: 30px;
     margin-right: 50px;
   }

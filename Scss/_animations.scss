@@ -91,6 +91,7 @@
   .coeur__bg {
     &:hover {
       animation: anim-coeur1 800ms forwards;
+      cursor: pointer;
     }
   }
 
@@ -107,6 +108,7 @@
   .coeur__sansbg {
     &:hover {
       animation: anim-coeur2 800ms forwards;
+      cursor: pointer;
     }
   }
 
